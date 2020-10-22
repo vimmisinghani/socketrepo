@@ -1,0 +1,26 @@
+<link href="./assets/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="./assets/bootstrap.min.js"></script>
+<script src="./assets/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<html>
+  <head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet"/>
+  </head>
+<body>
+
+  <div>
+    <h1>Welcome To payload testing </h1>
+    <h5>UserId <%= userId %></h5>
+    <h5>UserName <%= username %></h5>
+    <input type="hidden" name="txtname" id="txtname" value= <%= username %> />
+    <input type="hidden" name="txtuserid" id="txtuserid" value= <%= userId %> />
+    <div id="payloadTxt"></div>
+  </div>
+
+  <script src="./assets/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/payload.js"></script>
+</body>
+</html>
+<script >
